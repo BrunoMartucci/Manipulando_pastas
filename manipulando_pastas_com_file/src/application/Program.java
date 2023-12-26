@@ -19,6 +19,13 @@ public class Program {
 		for (File folder : folders){
 			System.out.println(folder);
 		}
+		
+		File[] files = path.listFiles(File::isFile);
+		System.out.println("Arquivos:");
+		for (File file : files) {
+			System.out.println(file);
+		}
+		
 		sc.close();
 	}
 
